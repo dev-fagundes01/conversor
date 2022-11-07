@@ -24,7 +24,7 @@ const convertValues=()=>{
     currency: "USD"
     }).format(inputReais/dolar)
 
-    if(select.value==='€ euro')
+    if(select.value==='€ Euro')
     currencyValueText.innerHTML=new Intl.NumberFormat("de-DE", {
     style: "currency", 
     currency: "EUR"
