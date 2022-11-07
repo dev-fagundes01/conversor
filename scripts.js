@@ -45,8 +45,8 @@ changeCurrency= () => {
     const currencyName = document.getElementById("currency-name")
     const currencyImg = document.getElementById("currency-img")
 
-    if(select.value==='€ euro'){
-        currencyName.innerHTML="euro"
+    if(select.value==='€ Euro'){
+        currencyName.innerHTML="Euro"
         currencyImg.src ="./img/UE.svg"
     }
     if(select.value==='US$ Dolar americano'){
