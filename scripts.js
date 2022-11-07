@@ -51,7 +51,7 @@ changeCurrency= () => {
     }
     if(select.value==='€ Euro'){
         currencyName.innerHTML="Euro"
-
+        currencyImg.src='./img/UE.svg'
     }
     if(select.value==='Bitcoin'){
         currencyName.innerHTML="Bitcoin"
