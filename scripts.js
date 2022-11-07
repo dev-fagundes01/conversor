@@ -45,13 +45,13 @@ changeCurrency= () => {
     const currencyName = document.getElementById("currency-name")
     const currencyImg = document.getElementById("currency-img")
 
-    if(select.value==='€ Euro'){
-        currencyName.innerHTML="Euro"
-        currencyImg.src ="./img/UE.svg"
-    }
     if(select.value==='US$ Dolar americano'){
         currencyName.innerHTML="Dolar americano"
         currencyImg.src ="./img/eua.svg"
+    }
+    if(select.value==='€ Euro'){
+        currencyName.innerHTML="Euro"
+        currencyImg.src ="./img/UE.svg"
     }
     if(select.value==='Bitcoin'){
         currencyName.innerHTML="Bitcoin"
