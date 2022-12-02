@@ -109,3 +109,11 @@ section{
     color: #1B83E2;
     font-weight: 795;
 }
+
+@media screen and (max-width:400px){
+    .container{
+        width: 100%;
+        height: auto;
+        margin-top: 1px;
+    }
+}
