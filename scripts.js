@@ -8,7 +8,7 @@ const convertValues= async ()=>{
    
     const data= await fetch('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL').then(Response => Response.json())
 
-    const dolar=data.USDBRL.high
+    const dólar=data.USDBRL.high
     const euro=data.EURBRL.high
     const bitcoin=data.BTCBRL.high
 
@@ -17,11 +17,11 @@ const convertValues= async ()=>{
     currency: "BRL"
     }).format(inputReais)
 
-    if(select.value==='US$ Dolar americano')
+    if(select.value==='US$ Dólar americano')
     currencyValueText.innerHTML=new Intl.NumberFormat("en-US", {
     style: "currency", 
     currency: "USD"
-    }).format(inputReais/dolar)
+    }).format(inputReais/dólar)
 
     if(select.value==='€ Euro')
     currencyValueText.innerHTML=new Intl.NumberFormat("de-DE", {
@@ -44,8 +44,8 @@ changeCurrency= () => {
     const currencyName = document.getElementById("currency-name")
     const currencyImg = document.getElementById("currency-img")
 
-    if(select.value==='US$ Dolar americano'){
-        currencyName.innerHTML="Dolar americano"
+    if(select.value==='US$ Dólar americano'){
+        currencyName.innerHTML="Dólar americano"
         currencyImg.src ="./img/eua.svg"
     }
     if(select.value==='€ Euro'){
