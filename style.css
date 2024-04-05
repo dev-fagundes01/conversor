@@ -103,9 +103,10 @@ section {
   text-align: center;
 }
 
-.img {
+img {
   padding-top: 15px;
   padding-bottom: 13.19px;
+  height: 5rem;
 }
 
 .n-moeda {

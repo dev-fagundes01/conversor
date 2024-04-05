@@ -1,64 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://th.bing.com/th/id/OIP.cZDQIkTwH9uPtuUYdRZ_GwHaHa?pid=ImgDet&rs=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://th.bing.com/th/class/OIP.cZDQIkTwH9uPtuUYdRZ_GwHaHa?pid=ImgDet&rs=1"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./scripts.js"></script>
     <title>CodeClub Convert Money</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="container">
+      <header>
+        <h1>CodeClub Convert Money</h1>
+      </header>
 
-        <header>
-            <h1>CodeClub Convert Money</h1>
-        </header>
+      <main>
+        <label>
+          Converter <b>de</b>
+          <select class="current-selection-currency-convert">
+            <option value="real">R$ Real Brasileiro</option>
+            <option value="dolar">US$ Dólar americano</option>
+            <option value="euro">€ Euro</option>
+            <option value="libra">£ libra Esterlina</option>
+            <option value="yuan">¥ Yuan</option>
+          </select>
+        </label>
+        <label>
+          Converter <b>para</b>
+          <select class="current-result-currency-selection">
+            <option value="dolar">US$ Dólar americano</option>
+            <option value="real">R$ Real Brasileiro</option>
+            <option value="euro">€ Euro</option>
+            <option value="libra">£ libra Esterlina</option>
+            <option value="yuan">¥ Yuan</option>
+            <option value="bitcoin">₿ Bitcoin</option>
+          </select>
+        </label>
+        <label>
+          <p><b>valor</b></p>
+          <input class="input" type="text" placeholder="R$ 10.000,00" />
+        </label>
 
-        <main>
-            <label>
-                Converter <b>de</b>
-                <select>
-                    <option>R$ Real brasileiro</option>
-                </select>
-            </label>
-            <label>
-                Converter <b>para</b>
-                <select id="currency-select">
-                    <option value="dolar">US$ Dolar americano</option>
-                    <option value="euro">€ Euro</option>
-                    <option value="bitcoin">Bitcoin</option>
-                </select>
-            </label>
-            <label>
-                <p><b>valor</b></p>
-                <input id="input" type="text" placeholder="R$ 10.000,00">
-            </label>
+        <button class="convert-btn" type="button">Converter</button>
 
-            <button id="convert-button" type="button">Converter</button>
-
-            <section>
-                <div>
-                    <img src="./img/brasil 2.png" alt="bandeira-br">
-                    <p class="n-moeda">Real</p>
-                    <p class="v-moeda" id="real-value-text"> <b> R$ 10.000,00</b></p>
-                </div>
-                <img class="img" src="./img/Vector.png" alt="seta">
-                <div>
-                    <img src="./img/eua.svg" id="currency-img" alt="estrangeira">
-                    <p class="n-moeda" id="currency-name">Dolar americano</p>
-                    <p class="v-moeda" id="currency-value-text"><b> US$ 2.000,00</b></p>
-                </div>
-            </section>
-        </main>
+        <section>
+          <div>
+            <img src="./img/brasil 2.png" class="currency-img-convert" alt="bandeira-br" />
+            <p class="n-moeda currency-name-convert">Real Brasileiro</p>
+            <p class="v-moeda currency-value-convert"><b> R$ 10.000,00</b></p>
+          </div>
+          <img class="img" src="./img/Vector.png" alt="seta" />
+          <div>
+            <img src="./img/eua.svg" class="currency-img-result" alt="estrangeira" />
+            <p class="n-moeda currency-name-result">Dolar americano</p>
+            <p class="v-moeda currency-value-result"><b> US$ 2.000,00</b></p>
+          </div>
+        </section>
+      </main>
     </div>
-</body>
-<script src="./scripts.js"></script>
-
+  </body>
 </html>
